@@ -4,9 +4,9 @@ Static sales page for Videogrammer's first ebook, The AI Music Video Playbook, i
 (the site's own `site.css` and 3D `world.js` engine, "reels" world: a helix of film frames you fly through on scroll).
 
 We sell ONE product: the Complete Kit (Playbook PDF + editable Workbook DOCX/PDF + shot sheet kit).
-Launch price $15 for the first 100 copies, then $20 (the printed price of the two books). Every buy button goes to
+Launch price $15 for the first 100 copies, then the regular $30 (Playbook $10 + Workbook $10 + Shot Sheet Kit $10). Every buy button goes to
 https://shop.namatma.com/namatma/buy/0cd81bf0-3a4f-471d-b57b-a0cae6c5ccb0 (OwnStreet, Razorpay, USD).
-When the 100th copy sells: change the price to $20 on OwnStreet and remove the launch wording on this page.
+When the 100th copy sells: change the price to $30 on OwnStreet and remove the launch wording on this page.
 
 Films play in an on-page player (youtube-nocookie embed, related videos off). The page never links out to YouTube.
 
