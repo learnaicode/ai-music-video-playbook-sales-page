@@ -228,6 +228,15 @@ footer.foot .wrap{grid-template-columns:2fr 1fr 1fr}
 .buybar .btn{padding:13px 16px;font-size:12px}
 @media (max-width:760px){.buybar.show{display:flex}footer.foot{padding-bottom:90px}}
 </style>
+<!-- Meta Pixel (Namatma, same Pixel as the OwnStreet store) -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1468267852035439');
+fbq('track','PageView');
+fbq('track','ViewContent',{content_name:'The Complete AI Music Video Kit',content_ids:['0cd81bf0-3a4f-471d-b57b-a0cae6c5ccb0'],content_type:'product',value:15,currency:'USD'});
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="0cd81bf0-3a4f-471d-b57b-a0cae6c5ccb0"]');if(a){fbq('track','InitiateCheckout',{content_name:'The Complete AI Music Video Kit',content_ids:['0cd81bf0-3a4f-471d-b57b-a0cae6c5ccb0'],content_type:'product',value:15,currency:'USD',num_items:1});}},true);
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1468267852035439&ev=PageView&noscript=1"/></noscript>
 </head>
 <body data-page="playbook">
 <canvas id="world" aria-hidden="true"></canvas>
