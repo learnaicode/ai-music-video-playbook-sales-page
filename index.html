@@ -50,6 +50,18 @@ header.top nav.main a.cta:hover{background:#4a72ff}
 /* hero */
 section.hero.pbhero{display:block;min-height:100vh;padding:150px 0 64px}
 section.hero.pbhero::before{background:linear-gradient(90deg,rgba(5,7,12,.9) 0%,rgba(5,7,12,.65) 50%,rgba(5,7,12,.35) 100%)}
+.opener{position:relative;z-index:2;min-height:100vh;min-height:100svh;padding:112px 0 26px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px}
+.opener picture{display:block;line-height:0}
+.opener img{display:block;width:auto;height:auto;max-width:min(1500px,94vw);max-height:calc(100vh - 235px);max-height:calc(100svh - 235px);border:1px solid var(--line2);box-shadow:0 40px 120px rgba(0,0,0,.7),0 0 0 1px rgba(61,107,255,.22),0 0 90px rgba(61,107,255,.18);animation:openin 1.6s cubic-bezier(.2,.7,.2,1) both}
+@keyframes openin{from{opacity:0;transform:scale(1.045);filter:brightness(.35) blur(2px)}to{opacity:1;transform:none;filter:none}}
+.opener .obtns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;animation:openfade 1s .9s both}
+.opener .cue{font:11px var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--mute);text-decoration:none;animation:openfade 1s 1.3s both}
+.opener .cue:hover{color:#fff}
+@keyframes openfade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (max-width:700px){.opener{padding:96px 0 22px;gap:16px}.opener img{max-width:92vw;max-height:calc(100svh - 190px)}.opener .obtns .btn{padding:13px 16px;font-size:12px}}
+@media (prefers-reduced-motion:reduce){.opener img,.opener .obtns,.opener .cue{animation:none}}
+section.hero.pbhero.after{min-height:0;padding:40px 0 64px}
+.pbhero.after .hgrid2{grid-template-columns:1fr;max-width:880px}
 .hgrid2{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
 .hgrid2>*{min-width:0}
 .hgrid2 h1{font-size:clamp(44px,5.4vw,84px);margin:16px 0 20px}
@@ -265,8 +277,21 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
 
 <main>
 
+<!-- 0. OPENER: the kit itself, before any words (matches the ad) -->
+<section class="opener" aria-label="The Complete AI Music Video Kit">
+  <picture>
+    <source media="(max-width:700px)" srcset="https://cdn.jsdelivr.net/gh/learnaicode/ai-music-video-playbook-sales-page@b59b12d36a600861168630b81ec89f35cffd9096/assets/A-bundle-vertical.jpg" width="1080" height="1920">
+    <img src="https://cdn.jsdelivr.net/gh/learnaicode/ai-music-video-playbook-sales-page@b59b12d36a600861168630b81ec89f35cffd9096/assets/A-bundle-wide.jpg" alt="The Complete AI Music Video Kit: Playbook on a tablet, editable Workbook on a laptop, shot sheet on a phone. Launch price $15, regular $30." width="1920" height="1080" fetchpriority="high">
+  </picture>
+  <div class="obtns">
+    <a class="btn solid" href="#offer"><i></i>Get the kit · $15 <s>$30</s></a>
+    <button class="btn play" type="button" data-film="26K8xcJmAok" data-title="Prometheus">Watch a film made this way</button>
+  </div>
+  <a class="cue" href="#start">See what's inside ↓</a>
+</section>
+
 <!-- 1. HERO -->
-<section class="hero pbhero">
+<section class="hero pbhero after" id="start">
   <div class="wrap hgrid2">
     <div>
       <span class="slate rv">Videogrammer's first ebook · <b>launch edition</b></span>
@@ -278,10 +303,6 @@ document.addEventListener('click',function(e){var a=e.target.closest&&e.target.c
         <button class="btn play" type="button" data-film="26K8xcJmAok" data-title="Prometheus">Watch a film made this way</button>
       </div>
       <p class="note rv"><b>●</b> Instant download · Card or UPI · Free 34 page sample</p>
-    </div>
-    <div class="hero-media rv">
-      <img src="https://cdn.jsdelivr.net/gh/learnaicode/ai-music-video-playbook-sales-page@2306ee39caba5a41105c056f33c7e3d7ee9eb3a2/assets/A-bundle-square.jpg" alt="The Complete AI Music Video Kit: Playbook on a tablet, editable Workbook on a laptop, shot sheet on a phone" width="1080" height="1080">
-      <div class="hud">Launch price<b>$15<s>$30</s></b>First 100 copies</div>
     </div>
   </div>
   <div class="wrap">
