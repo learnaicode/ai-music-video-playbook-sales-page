@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Music Video Playbook</title>
+<meta name="description" content="The 7 day method behind 14 released AI music videos. Playbook PDF $10, editable Workbook $10, complete kit $15. By Videogrammer Studios.">
+<meta property="og:title" content="The AI Music Video Playbook · Videogrammer">
+<meta property="og:description" content="You have the song. Now make the film. The 7 day method behind 14 released music videos.">
+<meta property="og:image" content="assets/A-bundle-horizontal.jpg">
+<meta name="theme-color" content="#05070c">
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+/* page layer on top of the Videogrammer site system (assets/site.css) */
+:root{--accent:#3d6bff;--gold:#e8d3a6;--gold2:#ffd27a}
+body{background:#05070c}
+.wrap{width:min(var(--w),calc(100% - 32px))}
+img{height:auto}
+h1 em,h2 em,h3 em{color:var(--accent)}
+.gold{color:var(--gold2)}
+.btn{justify-content:center;text-align:center}
+.btn.solid{background:#2d58e8;border-color:#2d58e8;color:#fff;font-weight:600}
+.btn.solid:hover{filter:brightness(1.18)}
+.btn s{opacity:.65}
+.btns{margin-top:30px}
+.note{margin-top:14px;font:12px/1.6 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}
+.note b{color:var(--ok);font-weight:500}
+.panel{padding:24px}
+.sec-head{margin-bottom:40px}.sec-head .slate{display:block;margin-bottom:16px}.sec-head .lead{margin-top:18px}
+.center{text-align:center}.center .lead{margin-left:auto;margin-right:auto}
+section{padding:110px 0}
+@media (max-width:760px){section{padding:76px 0}}
+
+/* top offer strip + header */
+.strip{position:fixed;top:0;left:0;right:0;z-index:21;height:34px;display:flex;align-items:center;justify-content:center;gap:10px;padding:0 12px;background:linear-gradient(90deg,#071233,#0d1f5c 50%,#071233);border-bottom:1px solid rgba(61,107,255,.45);font:11.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#cfdaff;white-space:nowrap;overflow:hidden}
+.strip b{color:#fff;font-weight:500}.strip a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+@media (max-width:560px){.strip .long{display:none}}
+header.top{top:34px}
+header.top nav.main a.cta{background:#2d58e8;color:#fff}
+header.top nav.main a.cta:hover{background:#4a72ff}
+
+/* hero */
+section.hero.pbhero{display:block;min-height:100vh;padding:150px 0 70px}
+section.hero.pbhero::before{background:linear-gradient(90deg,rgba(5,7,12,.88) 0%,rgba(5,7,12,.6) 48%,rgba(5,7,12,.25) 100%)}
+.hgrid2>*{min-width:0}
+.hgrid2{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.hgrid2 h1{font-size:clamp(42px,4.9vw,78px);margin:18px 0 22px}
+.ticks{list-style:none;display:grid;gap:12px;margin-top:26px;max-width:640px}
+.ticks li{display:flex;gap:14px;align-items:flex-start;color:#dfe4ee;font-size:16.5px}
+.ticks li::before{content:"";flex:0 0 9px;height:9px;margin-top:9px;background:var(--accent);box-shadow:0 0 12px var(--accent)}
+.hero-media{position:relative}
+.hero-media img{width:100%;border:1px solid var(--line2);box-shadow:0 30px 90px rgba(0,0,0,.65),0 0 0 1px rgba(61,107,255,.2),0 0 60px rgba(61,107,255,.15)}
+.hero-media .hud{position:absolute;left:-12px;bottom:-14px;background:rgba(5,7,12,.92);border:1px solid rgba(61,107,255,.6);padding:10px 14px;font:11px/1.5 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--cob2)}
+.hero-media .hud b{display:block;font:900 28px var(--disp);letter-spacing:.04em;color:#fff}
+.yt-pill{display:inline-flex;align-items:center;gap:10px;font:11.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#cfd5e2;text-decoration:none;border:1px solid var(--line2);padding:8px 12px;background:rgba(5,7,12,.6)}
+.yt-pill i{width:18px;height:13px;background:#ff0033;position:relative}
+.yt-pill i::after{content:"";position:absolute;left:7px;top:3px;border-left:6px solid #fff;border-top:3.5px solid transparent;border-bottom:3.5px solid transparent}
+@media (max-width:960px){.hgrid2{grid-template-columns:1fr;gap:36px}.hero-media{max-width:560px}.hero-media .hud{left:8px;bottom:8px}section.hero.pbhero{padding-top:130px}}
+
+/* stat bar */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line2);background:rgba(5,7,12,.78);backdrop-filter:blur(6px);margin-top:60px}
+.stats div{padding:20px 22px;border-right:1px solid var(--line)}
+.stats div:last-child{border-right:0}
+.stats b{display:block;font:900 clamp(30px,3.4vw,44px)/1 var(--disp);color:#fff}
+.stats span{display:block;margin-top:8px;font:11px/1.5 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+@media (max-width:760px){.stats{grid-template-columns:1fr 1fr}.stats div:nth-child(2){border-right:0}.stats div:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+
+/* question */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.xlist{list-style:none;display:grid;gap:8px}
+.xlist li{display:flex;gap:14px;padding:15px 18px;border:1px solid var(--line);background:rgba(5,7,12,.8);color:#dfe4ee}
+.xlist li::before{content:"✕";color:#ff6b7a;font:600 14px var(--mono)}
+.say{border-left:2px solid var(--accent);padding:6px 0 6px 26px}
+.say p{font-size:clamp(18px,1.8vw,22px);line-height:1.55;color:#e9edf5}
+.say p+p{margin-top:16px}
+@media (max-width:860px){.two{grid-template-columns:1fr}}
+
+/* films (no cropping: natural 16:9 thumbnails) */
+.films{display:grid;grid-template-columns:repeat(7,1fr);gap:10px}
+.film{display:block;text-decoration:none;border:1px solid var(--line);background:#000;position:relative;transition:border-color .2s,transform .25s}
+.film img{width:100%;aspect-ratio:auto;opacity:.88;transition:opacity .2s}
+.film:hover{border-color:var(--accent);transform:translateY(-3px)}
+.film:hover img{opacity:1}
+.film span{display:block;padding:8px 9px 9px;font:10.5px/1.3 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#cfd5e2;border-top:1px solid var(--line)}
+.film::after{content:"";position:absolute;top:7px;right:7px;width:20px;height:14px;background:#ff0033 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Cpath d='M3.6 2.4v5.2L7.8 5z' fill='%23fff'/%3E%3C/svg%3E") center/9px no-repeat}
+@media (max-width:1100px){.films{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:620px){.films{grid-template-columns:repeat(2,1fr)}}
+.films-note{margin-top:20px;font:12px var(--mono);letter-spacing:.08em;color:var(--dim)}
+.films-note a{color:var(--cob2)}
+
+/* outcomes */
+.five{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.five .panel h3{margin:12px 0 10px;font-size:26px}
+.five .panel p{font-size:15px;color:var(--mute)}
+.num{font:11px var(--mono);letter-spacing:.2em;color:var(--accent)}
+@media (max-width:1060px){.five{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.five{grid-template-columns:1fr}}
+
+/* failure rows */
+.rows{display:grid;gap:8px}
+.row{display:grid;grid-template-columns:70px 1fr 1fr 1.15fr;gap:22px;align-items:center;padding:18px 22px;border:1px solid var(--line);background:rgba(5,7,12,.82)}
+.row .no{font:900 40px/1 var(--disp);color:var(--accent)}
+.row .k{display:none;font:10.5px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin-bottom:4px}
+.row .bad{color:#ffd3d8}.row .fix{color:#e9edf5}.row .fix b{color:var(--cob2);font-weight:600}
+.rhead{display:grid;grid-template-columns:70px 1fr 1fr 1.15fr;gap:22px;padding:0 22px 8px;font:10.5px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+@media (max-width:860px){.row,.rhead{grid-template-columns:1fr;gap:10px}.rhead{display:none}.row .k{display:block}.row .no{font-size:30px}}
+
+/* quote */
+.quote{max-width:980px;margin:0 auto;text-align:center}
+.quote blockquote{font:900 clamp(32px,4.4vw,64px)/1.02 var(--disp);text-transform:uppercase;color:#fff}
+.quote blockquote em{color:var(--accent)}
+.quote cite{display:block;margin-top:20px;font:12px var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--mute);font-style:normal}
+
+/* feature split (images whole, never cropped) */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+.split img{width:100%;border:1px solid var(--line2);box-shadow:0 24px 70px rgba(0,0,0,.55)}
+.split.rev .media{order:2}
+@media (max-width:920px){.split{grid-template-columns:1fr;gap:30px}.split.rev .media{order:0}}
+
+/* pillars */
+.four{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line2);background:rgba(5,7,12,.8)}
+.four>div{padding:28px 24px;border-right:1px solid var(--line)}
+.four>div:last-child{border-right:0}
+.four h3{margin:10px 0 10px;font-size:26px}
+.four p{font-size:15px;color:var(--mute)}
+@media (max-width:960px){.four{grid-template-columns:1fr 1fr}.four>div:nth-child(2){border-right:0}.four>div:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+@media (max-width:540px){.four{grid-template-columns:1fr}.four>div{border-right:0;border-bottom:1px solid var(--line)}}
+
+/* fit + before/after + compare */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.duo .panel h3{font-size:30px;margin-bottom:18px}
+.duo ul{list-style:none;display:grid;gap:12px}
+.duo li{position:relative;padding-left:28px;color:#dfe4ee}
+.duo .yes li::before,.duo .after li::before,.duo .us li::before{content:"✓";position:absolute;left:0;color:var(--ok);font-family:var(--mono)}
+.duo .no li::before,.duo .before li::before{content:"✕";position:absolute;left:0;color:#ff6b7a;font-family:var(--mono)}
+.duo .them li::before{content:"—";position:absolute;left:0;color:var(--dim)}
+.duo .them li{color:var(--mute)}
+.duo .yes,.duo .after,.duo .us{border-color:rgba(61,107,255,.55);box-shadow:inset 0 0 0 1px rgba(61,107,255,.15),0 0 40px rgba(61,107,255,.08)}
+@media (max-width:860px){.duo{grid-template-columns:1fr}}
+
+/* days */
+.days{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
+.day{border:1px solid var(--line);background:rgba(5,7,12,.84);padding:18px 14px 16px;position:relative;overflow:hidden}
+.day::before{content:"";position:absolute;left:0;top:0;right:0;height:2px;background:linear-gradient(90deg,var(--pre),var(--prod),var(--post))}
+.day .d{font:900 46px/1 var(--disp);color:#fff}
+.day h4{font:700 19px/1.05 var(--disp);text-transform:uppercase;margin:8px 0;letter-spacing:.02em}
+.day p{font-size:13.5px;line-height:1.5;color:var(--mute)}
+.day .g{margin-top:10px;font:10px/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ok)}
+@media (max-width:1100px){.days{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:620px){.days{grid-template-columns:1fr 1fr}}
+details.toc{margin-top:16px;border:1px solid var(--line2);background:rgba(5,7,12,.85);padding:0 22px}
+details.toc summary{cursor:pointer;list-style:none;padding:16px 0;font:12px var(--mono);letter-spacing:.16em;text-transform:uppercase;display:flex;justify-content:space-between;gap:12px}
+details.toc summary::after{content:"+";color:var(--accent)}
+details.toc[open] summary::after{content:"−"}
+.toc{columns:2;column-gap:40px;padding:4px 0 22px;font-size:15px;color:var(--mute)}
+.toc div{break-inside:avoid;padding:7px 0;border-bottom:1px dashed var(--line)}
+.toc b{color:#fff;font-weight:600}
+@media (max-width:700px){.toc{columns:1}}
+
+/* prompt compare */
+.cmp{display:grid;grid-template-columns:1fr 1.45fr;gap:14px}
+.code{border:1px solid var(--line2);background:rgba(3,5,10,.92);padding:22px;font:13.5px/1.75 var(--mono);color:#cfd5e2;word-break:break-word}
+.code .lbl{display:block;font:10.5px var(--mono);letter-spacing:.18em;margin-bottom:12px}
+.code.bad{border-color:rgba(255,107,122,.4)}.code.bad .lbl{color:#ff6b7a}
+.code.good{border-color:rgba(61,107,255,.6);box-shadow:0 0 40px rgba(61,107,255,.1)}.code.good .lbl{color:var(--cob2)}
+.code.good b{color:#fff;font-weight:500}
+.rules{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:14px}
+.rules div{border:1px solid var(--line);background:rgba(5,7,12,.8);padding:14px;font-size:14px;color:#dfe4ee}
+.rules b{display:block;font:900 28px var(--disp);color:var(--accent)}
+@media (max-width:920px){.cmp{grid-template-columns:1fr}.rules{grid-template-columns:1fr 1fr}}
+
+/* kit cards (images at natural ratio) */
+.kitgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;align-items:start}
+.kitgrid .panel{padding:0;display:flex;flex-direction:column}
+.kitgrid .panel img{width:100%;border-bottom:1px solid var(--line2)}
+.kitgrid .body{padding:22px}
+.kitgrid .fmt{font:10.5px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--cob2)}
+.kitgrid h3{margin:8px 0 12px}
+.kitgrid ul{list-style:none;display:grid;gap:7px;font-size:14.5px;color:var(--mute)}
+.kitgrid li::before{content:"› ";color:var(--accent)}
+@media (max-width:920px){.kitgrid{grid-template-columns:1fr;max-width:620px;margin:0 auto}}
+
+/* author */
+.author{display:grid;grid-template-columns:340px 1fr;gap:48px;align-items:center}
+.author img{width:100%;border:1px solid var(--line2)}
+.author ul{list-style:none;display:grid;gap:10px;margin-top:20px}
+.author li{padding-left:24px;position:relative;color:#dfe4ee}
+.author li::before{content:"";position:absolute;left:0;top:11px;width:12px;height:2px;background:var(--accent)}
+@media (max-width:820px){.author{grid-template-columns:1fr}.author img{max-width:320px}}
+
+/* what why who */
+.www{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;text-align:left}
+.www b{display:block;font:900 32px var(--disp);text-transform:uppercase;color:#fff;margin-bottom:8px}
+.www b em{color:var(--accent)}
+@media (max-width:820px){.www{grid-template-columns:1fr}}
+
+/* pricing */
+.prices{display:grid;grid-template-columns:1fr 1.12fr 1fr;gap:14px;align-items:stretch}
+.price{display:flex;flex-direction:column;gap:14px;position:relative}
+.price img{width:100%;border:1px solid var(--line)}
+.price h3{font-size:30px}
+.price .amt{font:900 64px/1 var(--disp);color:#fff}
+.price .amt s{font-size:30px;color:var(--dim);margin-left:10px}
+.price .fmt{font:10.5px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.price ul{list-style:none;display:grid;gap:8px;font-size:14.5px;color:#dfe4ee;flex:1}
+.price li::before{content:"✓  ";color:var(--ok);font-family:var(--mono)}
+.price .btn{width:100%}
+.price.best{border:1px solid #2d58e8;box-shadow:0 0 0 1px rgba(61,107,255,.4),0 0 80px rgba(61,107,255,.18);transform:translateY(-12px)}
+.price.best .flag{position:absolute;top:-1px;right:-1px;background:#2d58e8;color:#fff;font:10.5px var(--mono);letter-spacing:.16em;padding:6px 10px;text-transform:uppercase}
+@media (max-width:980px){.prices{grid-template-columns:1fr;max-width:560px;margin:0 auto}.price.best{transform:none;order:-1}}
+.secure{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:center;margin-top:28px;font:11.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
+
+/* faq */
+.faq{max-width:880px;margin:0 auto;display:grid;gap:8px}
+.faq details{border:1px solid var(--line);background:rgba(5,7,12,.86);padding:0 22px}
+.faq summary{cursor:pointer;list-style:none;padding:18px 0;font-weight:600;font-size:16.5px;display:flex;justify-content:space-between;gap:16px}
+.faq summary::after{content:"+";color:var(--accent);font-family:var(--mono)}
+.faq details[open] summary::after{content:"−"}
+.faq details[open]{border-color:rgba(61,107,255,.45)}
+.faq p{padding:0 0 20px;color:var(--mute);font-size:15.5px}
+.faq a{color:var(--cob2)}
+
+/* final */
+.final{text-align:center;padding:140px 0}
+.final h2{font-size:clamp(52px,8vw,120px);margin:16px 0 20px}
+.final .btns{justify-content:center}
+
+/* footer */
+footer.foot .brand.logo{display:inline-flex}
+footer.foot .lockup{height:84px;width:auto;margin-bottom:14px}
+
+/* sticky buy bar on phones */
+.buybar{position:fixed;left:0;right:0;bottom:0;z-index:40;display:none;align-items:center;gap:12px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(5,7,12,.96);border-top:1px solid rgba(61,107,255,.5);backdrop-filter:blur(10px)}
+.buybar .t{flex:1;font:10.5px/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+.buybar .t b{display:block;font:900 22px var(--disp);color:#fff;letter-spacing:.03em}
+.buybar .btn{padding:13px 16px;font-size:12px}
+@media (max-width:760px){.buybar.show{display:flex}footer.foot{padding-bottom:90px}}
+</style>
+</head>
+<body data-page="playbook">
+<canvas id="world" aria-hidden="true"></canvas>
+<div class="veil"></div>
+
+<div class="strip">◆ <span class="long">Videogrammer's first ebook ·&nbsp;</span><b>Complete Kit $15</b>&nbsp;<span class="long">(instead of $20)&nbsp;</span>· <a href="https://shop.namatma.com/namatma/buy/0cd81bf0-3a4f-471d-b57b-a0cae6c5ccb0">Get it</a></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand logo" href="https://videogrammer.com" aria-label="Videogrammer home"><img src="assets/logo-mark.png" alt="" class="lm"><span class="lt">Videogrammer</span></a>
+    <button id="burger" aria-expanded="false" aria-controls="mainnav">Menu</button>
+    <nav class="main" id="mainnav">
+      <a href="#films">Films</a><a href="#inside">Inside</a><a href="#kit">The kit</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a>
+      <button class="tog" id="motionTog" aria-pressed="true">Motion on</button>
+      <a class="cta" href="#pricing">Get the kit</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero pbhero">
+  <div class="wrap hgrid2">
+    <div>
+      <a class="yt-pill rv" href="https://www.youtube.com/@namaguru" target="_blank" rel="noopener"><i></i>Built from 14 released music videos · watch free</a>
+      <h1 class="rv">Your song deserves a film. <em>Most AI music videos never become one.</em></h1>
+      <p class="lead rv">The AI Music Video Playbook is the 7 day method behind every NAMA music video. Take one song to a released, cinematic AI music video: no film crew, no studio budget, no months of trial and error.</p>
+      <ul class="ticks rv">
+        <li>The exact production chain we use: song, timed shot sheet, controlled generation, edit, grade, master, release</li>
+        <li>The same face, costume and world in every shot, instead of a new stranger in each clip</li>
+        <li>Stop burning credits: a budget, one action per shot, and a rule for when to stop retrying</li>
+      </ul>
+      <div class="btns rv">
+        <a class="btn solid" href="https://shop.namatma.com/namatma/buy/0cd81bf0-3a4f-471d-b57b-a0cae6c5ccb0"><i></i>Get the complete kit · $15 <s>$20</s></a>
+        <a class="btn" href="https://shop.namatma.com/namatma/buy/1967d5d5-764a-41d8-9737-9e03ce61f6b3">Playbook only · $10</a>
+      </div>
+      <p class="note rv"><b>●</b> Instant digital download · Card or UPI · Read Day 1 free on the product page</p>
+    </div>
+    <div class="hero-media rv">
+      <img src="assets/A-bundle-square.jpg" alt="The Complete AI Music Video Kit: Playbook on a tablet, editable Workbook on a laptop, shot sheet on a phone" width="1080" height="1080">
+      <div class="hud">Everything for<b>$15</b>PDF · DOCX · Shot sheets</div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="stats rv">
+      <div><b>14</b><span>Released music videos made with this method</span></div>
+      <div><b>7 days</b><span>One delivery gate you can check each day</span></div>
+      <div><b>115</b><span>Pages with real frames and the lesson in each</span></div>
+      <div><b>12</b><span>Point Fake Test to score your cut</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- QUESTION -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="slate rv">Every musician with AI tools is about to face <b>one question</b></span>
+      <h2 class="rv">Can you make a <em>film</em>, or only clips?</h2>
+    </div>
+    <div class="two">
+      <ul class="xlist rv">
+        <li>The face changes between shots, so the viewer stops believing</li>
+        <li>Two hundred generations, and still no ending</li>
+        <li>The credits run out before the edit even starts</li>
+        <li>Pretty shots that don't follow the song</li>
+        <li>An edit that looks like a slideshow of experiments</li>
+      </ul>
+      <div class="say rv">
+        <p>Anyone can generate a beautiful clip now. That is exactly why a clip on its own is worth nothing.</p>
+        <p>What people watch, share and remember is a <b>film</b>: a world that holds together, a character you recognise, a reason for every cut. That is a directing skill, and you can learn it in a week.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FILMS -->
+<section id="films">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="slate rv">Don't take our word for it</span>
+      <h2 class="rv">14 released music videos. <em>One method.</em></h2>
+      <p class="lead rv">Every film here was made with the method in this book, and every one is free on YouTube. Watch two or three before you buy, then read how each shot was planned.</p>
+    </div>
+    <div class="films rv">
+      <a class="film" href="https://www.youtube.com/watch?v=26K8xcJmAok" target="_blank" rel="noopener"><img src="assets/films/26K8xcJmAok.jpg" alt="Prometheus" width="960" height="540" loading="lazy"><span>Prometheus</span></a>
+      <a class="film" href="https://www.youtube.com/watch?v=4al92OV99EI" target="_blank" rel="noopener"><img src="assets/films/4al92OV99EI.jpg" alt="The Duel" width="960" height="540" loading="lazy"><span>The Duel</span></a>
+      <a class="film" href="https://www.youtube.com/watch?v=GxwtDAXyxNI" target="_blank" rel="noopener"><img src="assets/films/GxwtDAXyxNI.jpg" alt="Chenda Beats" width="960" height="540" loading="lazy"><span>Chenda Beats</span></a>
+      <a class="film" href="https://www.youtube.com/watch?v=iyZcfmEyoaE" target="_blank" rel="noopener"><img src="assets/films/iyZcfmEyoaE.jpg" alt="Long Road" width="960" height="540" loading="lazy"><span>Long Road</span></a>
+      <a class="film" href="https://www.youtube.com/watch?v=brdOcsSv-Cc" target="_blank" rel="noopener"><img src="assets/films/brdOcsSv-Cc.jpg" alt="Mughamara" width="960" height="540" loading="lazy"><span>Mughamara</span></a>
+      <a class="film" href="https://www.youtube.com/watch?v=h9OG-EoC4vo" target="_blank" rel="noopener"><img src="assets/films/h9OG-EoC4vo.jpg" alt="Stay Standing" width="960" height="540" loading="lazy"><span>Stay Standing</span></a>
+      <a class="film" href="https://www.youtube.com/watch?v=hcD6IDmASCE" target="_blank" rel="noopener"><img src="assets/films/hcD6IDmASCE.jpg" alt="Go Go Little One" width="960" height="540" loading="lazy"><span>Go Go Little One</span></a>
+      <a class="film" href="https://www.youtube.com/watch?v=sgZVMidMc1Y" target="_blank" rel="noopener"><img src="assets/films/sgZVMidMc1Y.jpg" alt="Ja Tu Ja" width="960" height="540" loading="lazy"><span>Ja… Tu Ja</span></a>
+      <a class="film" href="https://www.youtube.com/watch?v=hvpoliPWDv4" target="_blank" rel="noopener"><img src="assets/films/hvpoliPWDv4.jpg" alt="Love Is Alive" width="960" height="540" loading="lazy"><span>Love Is Alive</span></a>
+      <a class="film" href="https://www.youtube.com/watch?v=Vj7vJj4BDlQ" target="_blank" rel="noopener"><img src="assets/films/Vj7vJj4BDlQ.jpg" alt="Ab Theek Hoon Mein" width="960" height="540" loading="lazy"><span>Ab Theek Hoon Mein</span></a>
+      <a class="film" href="https://www.youtube.com/watch?v=CWdJZ1wNAw8" target="_blank" rel="noopener"><img src="assets/films/CWdJZ1wNAw8.jpg" alt="We Are the Bullets" width="960" height="540" loading="lazy"><span>We Are the Bullets</span></a>
+      <a class="film" href="https://www.youtube.com/watch?v=d7Buif_TUaQ" target="_blank" rel="noopener"><img src="assets/films/d7Buif_TUaQ.jpg" alt="Chaar Paise" width="960" height="540" loading="lazy"><span>Chaar Paise</span></a>
+      <a class="film" href="https://www.youtube.com/watch?v=3QLg22MR13k" target="_blank" rel="noopener"><img src="assets/films/3QLg22MR13k.jpg" alt="Tumhare Baad" width="960" height="540" loading="lazy"><span>Tumhare Baad</span></a>
+      <a class="film" href="https://www.youtube.com/watch?v=XdYMGBYiBMQ" target="_blank" rel="noopener"><img src="assets/films/XdYMGBYiBMQ.jpg" alt="Awaken" width="960" height="540" loading="lazy"><span>Awaken</span></a>
+    </div>
+    <p class="films-note center">Start with <a href="https://www.youtube.com/watch?v=26K8xcJmAok" target="_blank" rel="noopener">Prometheus</a>: the book's studio story follows it. All films: <a href="https://www.youtube.com/@namaguru" target="_blank" rel="noopener">youtube.com/@namaguru</a></p>
+  </div>
+</section>
+
+<!-- OUTCOMES -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="slate rv">What changes when you <b>direct</b></span>
+      <h2 class="rv">From a folder of clips <em>to a film you can stand behind</em></h2>
+    </div>
+    <div class="five">
+      <div class="panel rv"><span class="num">01</span><h3>Finish</h3><p>Seven days, seven gates. Each day ends with something you can inspect, so the film actually ships.</p></div>
+      <div class="panel rv"><span class="num">02</span><h3>Hold the world</h3><p>Reference IDs and a continuity line keep the same face, costume and light to the last shot.</p></div>
+      <div class="panel rv"><span class="num">03</span><h3>Spend less</h3><p>Budget usable seconds, not generations. Change one thing per retry, then redesign.</p></div>
+      <div class="panel rv"><span class="num">04</span><h3>Cut on change</h3><p>An edit that follows the song's turns, so music and image land together.</p></div>
+      <div class="panel rv"><span class="num">05</span><h3>Release honestly</h3><p>Loudness, captions, rights and one clear AI disclosure. A release you're proud to share.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY FAIL -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="slate rv">Why most AI music videos <b>fail</b></span>
+      <h2 class="rv">It's not the tool. <em>It's the method.</em></h2>
+      <p class="lead rv">These are the mistakes we made, and fixed, across 14 films. Each one has a page in the book that solves it.</p>
+    </div>
+    <div class="rhead"><span></span><span>The common mistake</span><span>What it costs you</span><span>The fix in the Playbook</span></div>
+    <div class="rows">
+      <div class="row rv"><span class="no">01</span><div class="bad"><span class="k">Mistake</span>Prompting "cinematic, epic, emotional" and hoping</div><div><span class="k">Cost</span>The model has nothing to do. You pay for retries.</div><div class="fix"><span class="k">Fix</span><b>Day 3 · Prompt anatomy:</b> eight fields, one action, one end state</div></div>
+      <div class="row rv"><span class="no">02</span><div class="bad"><span class="k">Mistake</span>Generating before deciding what the film is about</div><div><span class="k">Cost</span>Two hundred shots, no story, no ending</div><div class="fix"><span class="k">Fix</span><b>Days 1 and 2:</b> map the song, write a brief that can say no, plant the ending early</div></div>
+      <div class="row rv"><span class="no">03</span><div class="bad"><span class="k">Mistake</span>No reference control</div><div><span class="k">Cost</span>A new face and a new jacket in every shot</div><div class="fix"><span class="k">Fix</span><b>Day 4 · Continuity:</b> approved reference IDs and a record repeated in every prompt</div></div>
+      <div class="row rv"><span class="no">04</span><div class="bad"><span class="k">Mistake</span>Retrying the same broken shot again and again</div><div><span class="k">Cost</span>Credits gone, schedule gone</div><div class="fix"><span class="k">Fix</span><b>Reshoot triage:</b> two careful retries, then redesign the shot</div></div>
+      <div class="row rv"><span class="no">05</span><div class="bad"><span class="k">Mistake</span>Editing pretty clips in order</div><div><span class="k">Cost</span>It feels like a slideshow, not a film</div><div class="fix"><span class="k">Fix</span><b>Day 5 · Cut on change,</b> then watch without defending the cut</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section>
+  <div class="wrap quote rv">
+    <blockquote>“The tools hand us material. <em>Directing is what turns it into a film.</em>”</blockquote>
+    <cite>From The AI Music Video Playbook</cite>
+  </div>
+</section>
+
+<!-- SAME FACE -->
+<section>
+  <div class="wrap split">
+    <div class="media rv"><img src="assets/D-sameface-horizontal.jpg" alt="Same face, every shot: four mismatched characters crossed out, one consistent character ticked" width="1400" height="788" loading="lazy"></div>
+    <div>
+      <span class="slate rv">The number one giveaway of a <b>fake</b> AI video</span>
+      <h2 class="rv" style="margin:16px 0 18px">Same face. <em>Every shot.</em></h2>
+      <p class="lead rv">Viewers forgive a lot. They don't forgive a hero who becomes someone else between cuts. The Playbook gives you the continuity system from every NAMA film: approved references with IDs, a continuity line repeated word for word, a provenance record, and a test that tells you when a shot is good enough to cut.</p>
+      <div class="btns rv"><a class="btn solid" href="https://shop.namatma.com/namatma/buy/1967d5d5-764a-41d8-9737-9e03ce61f6b3"><i></i>Get the Playbook · $10</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- PILLARS -->
+<section>
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="slate rv">Not another prompt list</span>
+      <h2 class="rv">The only playbook built from <em>released films</em></h2>
+      <p class="lead rv">Most AI video advice is a list of prompts and a screenshot. This is a production method, taken from films people can watch today.</p>
+    </div>
+    <div class="four rv">
+      <div><span class="num">Practical</span><h3>Real frames</h3><p>Frame studies from the NAMA films, each captioned with what it teaches.</p></div>
+      <div><span class="num">Complete</span><h3>Song to release</h3><p>Story, shots, generation, edit, grade, sound, captions, rights and release.</p></div>
+      <div><span class="num">Tool proof</span><h3>Any tools</h3><p>We used Suno, Higgsfield and Seedance. The method works with any equivalent.</p></div>
+      <div><span class="num">Accountable</span><h3>Seven gates</h3><p>A delivery you can check every day, so you know you're on track.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FIT -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="slate rv">Is this the right book for you?</span>
+      <h2 class="rv">Made for people who <em>want to finish</em></h2>
+    </div>
+    <div class="duo">
+      <div class="panel yes rv"><h3>This is for you if</h3><ul>
+        <li>You're a musician or singer with a song and no video yet</li>
+        <li>You're a filmmaker or editor moving into AI production</li>
+        <li>You run a channel, label or agency and need videos that look directed</li>
+        <li>You've tried AI video tools and ended up with clips, not a film</li>
+        <li>You prefer a clear process and worked examples over theory</li></ul></div>
+      <div class="panel no rv"><h3>It's not for you if</h3><ul>
+        <li>You want to train or build your own AI models</li>
+        <li>You want prompts without learning to direct</li>
+        <li>You expect a guaranteed viral hit (nobody can promise that)</li>
+        <li>You don't have a song you have the right to use</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE / AFTER -->
+<section>
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="slate rv">Before and after</span>
+      <h2 class="rv">What your week <em>looks like</em></h2>
+    </div>
+    <div class="duo">
+      <div class="panel before rv"><h3>Without a method</h3><ul>
+        <li>Open the generator first and hope an idea appears</li>
+        <li>A different face in every clip</li>
+        <li>Same broken shot, ten retries, credits gone</li>
+        <li>No ending, so the film never ships</li>
+        <li>Upload, then wonder why people leave in the first seconds</li></ul></div>
+      <div class="panel after rv"><h3>With the Playbook</h3><ul>
+        <li>Song mapped and brief written before the first image</li>
+        <li>Approved references with IDs, repeated in every prompt</li>
+        <li>One action per shot, two careful retries, then redesign</li>
+        <li>Ending planted on Day 2, cut by Day 5</li>
+        <li>Fake Test score, honest title, and a plan to read your retention</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- SEVEN DAYS -->
+<section id="inside">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="slate rv">What you'll <b>master</b></span>
+      <h2 class="rv">Seven days. <em>One finished film.</em></h2>
+      <p class="lead rv">Start with 30 seconds. The same method scales to a full song. Every day ends with a delivery gate you can inspect before you spend more time or money.</p>
+    </div>
+    <div class="days">
+      <div class="day rv"><div class="d">1</div><h4>Listen and limit</h4><p>Lock the song, map every change, write a brief that can say no.</p><div class="g">Gate · locked brief</div></div>
+      <div class="day rv"><div class="d">2</div><h4>Build the idea</h4><p>Four beats with cause, and the ending planted early.</p><div class="g">Gate · storyboard</div></div>
+      <div class="day rv"><div class="d">3</div><h4>Design the shots</h4><p>One action per shot, approved references, a timed shot sheet.</p><div class="g">Gate · shot sheet</div></div>
+      <div class="day rv"><div class="d">4</div><h4>Control the material</h4><p>Continuity, usable seconds, reshoot triage and a budget.</p><div class="g">Gate · coverage counted</div></div>
+      <div class="day rv"><div class="d">5</div><h4>Make the cut</h4><p>Cut on change, colour, captions, titles, the vertical version.</p><div class="g">Gate · picture lock</div></div>
+      <div class="day rv"><div class="d">6</div><h4>Finish</h4><p>Mix review, loudness, lyric timing, rights and disclosure.</p><div class="g">Gate · final master</div></div>
+      <div class="day rv"><div class="d">7</div><h4>Release</h4><p>Honest titles, one AI disclosure, then learn from the data.</p><div class="g">Gate · live and archived</div></div>
+    </div>
+    <details class="toc rv">
+      <summary>See everything inside the 115 page Playbook</summary>
+      <div class="toc">
+        <div><b>Before the week</b> · how to use the book, the toolkit, the 10 second test</div>
+        <div><b>The studio story</b> · a missing ending, a deadline, one director</div>
+        <div><b>Day 1</b> · listen before you look, map the changes, choose a finishable film, write a brief that can say no</div>
+        <div><b>Day 2</b> · give the image a consequence, four beats that change meaning, earn the first question, plant the ending</div>
+        <div><b>Day 3</b> · audience distance, the action axis, prompt anatomy, sequence versus shots, keyframe to motion</div>
+        <div><b>Day 4</b> · continuity and provenance, reference control, supported workflows, reshoot triage, budget</div>
+        <div><b>Day 5</b> · find the film in the material, cut on change, colour and finish, captions and titles</div>
+        <div><b>Day 6</b> · hear the space, mix review, lyric timing, rights and disclosure</div>
+        <div><b>Day 7</b> · release, read your analytics, the studio's verdict</div>
+        <div><b>The Machine Room</b> · prompts to copy and adapt, three review prompts, the shot prompt formula</div>
+        <div><b>The Fake Test</b> · 12 checks to score your cut before anyone sees it</div>
+        <div><b>Companion kit</b> · blank shot sheet, a filled six shot example, the folder plan</div>
+        <div><b>The NAMA collection</b> · frames from all 14 films, each with a lesson</div>
+        <div><b>Glossary and troubleshooting</b> · when the week goes wrong, and where to look</div>
+      </div>
+    </details>
+    <div class="btns rv" style="justify-content:center">
+      <a class="btn solid" href="https://shop.namatma.com/namatma/buy/0cd81bf0-3a4f-471d-b57b-a0cae6c5ccb0"><i></i>Get the complete kit · $15 <s>$20</s></a>
+      <a class="btn" href="https://shop.namatma.com/namatma/buy/1967d5d5-764a-41d8-9737-9e03ce61f6b3">Read Day 1 free, then decide</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROMPT -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="slate rv">See the <b>difference</b></span>
+      <h2 class="rv">The prompt that <em>saves the shot</em></h2>
+      <p class="lead rv">Adjectives don't direct a model. A director's prompt asks for one action and one end state, so the shot can be cut. This one is from Day 3 of the book.</p>
+    </div>
+    <div class="cmp">
+      <div class="code bad rv"><span class="lbl">✕ What most people type</span>"A cinematic, epic, emotional shot of a warrior holding fire on a mountain, 8K, masterpiece, dramatic lighting."<br><br>Nothing to cut on. Nothing to check. You'll pay for it twice.</div>
+      <div class="code good rv"><span class="lbl">✓ The director's prompt · Day 3</span><b>SHOT ID</b> F03 · <b>PURPOSE</b> the decision to give · <b>INPUT</b> approved character reference C01, location reference L01 · <b>FRAME</b> medium close-up, eye level, static camera · <b>ACTION</b> the figure opens his right hand slowly; a small golden flame remains above the palm · <b>LIGHT</b> soft warm source from screen-left · <b>CONTINUITY</b> dark shoulder-length hair; cream drape; bronze shoulder detail · <b>END STATE</b> open palm held still; eyes on the flame · <b>AVOID</b> new props, cuts, extra people, camera orbit · <b>ACCEPT IF</b> hand, face and flame remain readable</div>
+    </div>
+    <div class="rules">
+      <div class="rv"><b>1</b>One action per shot. Need two? Make two shots.</div>
+      <div class="rv"><b>2</b>Describe what the camera sees, not what the viewer should feel.</div>
+      <div class="rv"><b>3</b>Repeat the continuity line word for word.</div>
+      <div class="rv"><b>4</b>Write the end state, or you'll pay for the shot twice.</div>
+      <div class="rv"><b>5</b>Change one thing per retry, and write it down.</div>
+    </div>
+  </div>
+</section>
+
+<!-- KIT -->
+<section id="kit">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="slate rv">Everything in the complete kit</span>
+      <h2 class="rv">The method, the workbook <em>and the shot sheets</em></h2>
+    </div>
+    <div class="kitgrid">
+      <div class="panel rv"><img src="assets/B-playbook-horizontal.jpg" alt="The AI Music Video Playbook on a tablet" width="1400" height="788" loading="lazy"><div class="body"><span class="fmt">PDF eBook · 115 pages</span><h3>The Playbook</h3><ul><li>The 7 day method with daily gates</li><li>Frame studies from 14 released films</li><li>Prompts to copy and adapt</li><li>Continuity, budget and reshoot rules</li><li>The 12 point Fake Test</li></ul></div></div>
+      <div class="panel rv"><img src="assets/C-workbook-square.jpg" alt="The editable Workbook on a laptop" width="1080" height="1080" loading="lazy"><div class="body"><span class="fmt">Editable DOCX + print PDF · 76 pages</span><h3>The Workbook</h3><ul><li>Type your decisions straight into it</li><li>Project sheet, brief, four beats</li><li>Shot sheets and continuity ledgers</li><li>Budget, triage log, release checks</li><li>Reuse for every film, client work included</li></ul></div></div>
+      <div class="panel rv"><img src="assets/F-sevendays-horizontal.jpg" alt="Seven day cards and the shot sheet kit" width="1400" height="788" loading="lazy"><div class="body"><span class="fmt">XLSX + CSV + folder template · bundle only</span><h3>The Shot Sheet Kit</h3><ul><li>Styled shot sheet with dropdowns and totals</li><li>The filled six shot example from the book</li><li>Plain CSV for any tool or AI assistant</li><li>A ready project folder, 00_brief to 08_records</li></ul></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- AUTHOR -->
+<section>
+  <div class="wrap author">
+    <img class="rv" src="assets/founder.jpg" alt="Gurudath Sadanandan, founder of Videogrammer Studios" width="700" height="525" loading="lazy">
+    <div>
+      <span class="slate rv">Learn from the person who <b>directed the films</b></span>
+      <h2 class="rv" style="margin:16px 0 18px">Gurudath <em>Sadanandan</em></h2>
+      <p class="lead rv">“A finished song can suggest a hundred images. Making a film means deciding which of them belong together, what the audience understands, and what changes by the end.”</p>
+      <ul class="rv">
+        <li>Founder of Videogrammer Studios</li>
+        <li>Wrote and directed the NAMA music video collection: 14 films released on YouTube</li>
+        <li>Built the method in this book on those films, shot by shot</li>
+        <li>Teaches AI filmmaking one to one and in groups at videogrammer.com</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section>
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="slate rv">How it compares</span>
+      <h2 class="rv">Why this, <em>not another tutorial</em></h2>
+    </div>
+    <div class="duo">
+      <div class="panel us rv"><h3>The AI Music Video Playbook</h3><ul>
+        <li>A complete method from song to release</li><li>Proven on 14 films you can watch</li><li>Continuity and budget rules, not just prompts</li><li>An editable workbook and ready shot sheets</li><li>Works with any generator</li><li>One payment from $10, yours to keep</li></ul></div>
+      <div class="panel them rv"><h3>What you usually find</h3><ul>
+        <li>Prompt lists with no way to finish a film</li><li>Demo clips, not released work</li><li>Videos tied to one tool that changes next month</li><li>Courses with monthly subscriptions</li><li>Scattered advice you have to piece together</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- WWW -->
+<section>
+  <div class="wrap center">
+    <div class="sec-head">
+      <span class="slate rv">Your film starts this week</span>
+      <h2 class="rv">Take the <em>director's chair</em></h2>
+    </div>
+    <div class="www">
+      <div class="panel rv"><b>What<em>.</em></b><p>The step by step method to direct a cinematic AI music video, with the workbook and shot sheets to run it.</p></div>
+      <div class="panel rv"><b>Why<em>.</em></b><p>Clips are everywhere now. A finished film with a world that holds together is what people remember.</p></div>
+      <div class="panel rv"><b>Who<em>.</em></b><p>Musicians, filmmakers and creators who want a repeatable process, not one lucky shot.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="slate rv">Choose your kit</span>
+      <h2 class="rv">Start today. <em>Instant download.</em></h2>
+      <p class="lead rv">Pay once by card or UPI. The files arrive on screen and by email in seconds. Every product page lets you read the opening pages free before you pay.</p>
+    </div>
+    <div class="prices">
+      <div class="panel price rv">
+        <img src="assets/cover-playbook.jpg" alt="The AI Music Video Playbook cover" width="900" height="1273" loading="lazy">
+        <h3>The Playbook</h3>
+        <div class="amt">$10</div>
+        <div class="fmt">PDF eBook · 115 pages</div>
+        <ul><li>The 7 day method</li><li>14 film frame studies</li><li>Prompts and continuity rules</li><li>The 12 point Fake Test</li></ul>
+        <a class="btn" href="https://shop.namatma.com/namatma/buy/1967d5d5-764a-41d8-9737-9e03ce61f6b3">Get the Playbook</a>
+      </div>
+      <div class="panel price best rv">
+        <span class="flag">Best value · save $5</span>
+        <img src="assets/A-bundle-square.jpg" alt="The Complete AI Music Video Kit" width="1080" height="1080" loading="lazy">
+        <h3>The Complete Kit</h3>
+        <div class="amt">$15<s>$20</s></div>
+        <div class="fmt">PDF + editable DOCX + XLSX/CSV · one ZIP</div>
+        <ul><li>The Playbook (PDF)</li><li>The Workbook (editable DOCX + print PDF)</li><li>Styled shot sheet with dropdowns and totals</li><li>CSV shot sheets and folder template</li><li>The shot sheet kit is only in this bundle</li></ul>
+        <a class="btn solid" href="https://shop.namatma.com/namatma/buy/0cd81bf0-3a4f-471d-b57b-a0cae6c5ccb0"><i></i>Get the complete kit · $15</a>
+      </div>
+      <div class="panel price rv">
+        <img src="assets/cover-workbook.jpg" alt="The Workbook cover" width="900" height="1273" loading="lazy">
+        <h3>The Workbook</h3>
+        <div class="amt">$10</div>
+        <div class="fmt">Editable DOCX + print PDF · 76 pages</div>
+        <ul><li>Type your decisions in</li><li>Shot sheets and ledgers</li><li>Daily gates and release checks</li><li>Reuse for every film</li></ul>
+        <a class="btn" href="https://shop.namatma.com/namatma/buy/a7a9548f-4f4a-443e-8968-1e25878e28ad">Get the Workbook</a>
+      </div>
+    </div>
+    <div class="secure rv"><span>Secure checkout by Razorpay</span><span>Card or UPI</span><span>Instant digital download</span><span>No printed book is shipped</span></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head center"><span class="slate rv">Questions</span><h2 class="rv">Frequently <em>asked</em></h2></div>
+    <div class="faq">
+      <details class="rv"><summary>I have never made a music video. Is this for me?</summary><p>Yes. You start with a 10 second test and a 30 second first film, not a full song. You need a song you have the right to use, any editor that can cut to music, and one image and one video generator. The book shows the smallest plans to start with.</p></details>
+      <details class="rv"><summary>Does it only work with Suno and Higgsfield?</summary><p>No. The NAMA films used Suno, Higgsfield and Seedance, and the book shows that chain. The method doesn't depend on a brand: any equivalent tool works, and the book tells you what to check before you pay for a plan.</p></details>
+      <details class="rv"><summary>Can I see the films before I buy?</summary><p>Yes. All 14 are free on YouTube at <a href="https://www.youtube.com/@namaguru" target="_blank" rel="noopener">youtube.com/@namaguru</a>. Start with <a href="https://www.youtube.com/watch?v=26K8xcJmAok" target="_blank" rel="noopener">Prometheus</a>, the film the book's studio story follows.</p></details>
+      <details class="rv"><summary>Can I read some of it first?</summary><p>Yes. The Playbook's product page shows the opening and all of Day 1 free (19 pages). The bundle page shows the opening of both books.</p></details>
+      <details class="rv"><summary>Is this a printed book? How do I get it?</summary><p>It's a digital download. Right after payment you get the files on screen and by email. The bundle arrives as one ZIP: tap it and choose Extract (Files app on iPhone, Files by Google on Android). Nothing is shipped.</p></details>
+      <details class="rv"><summary>Can I really type into the Workbook?</summary><p>Yes. The DOCX opens in Microsoft Word, Apple Pages or Google Docs. Save a fresh copy for each film. Prefer paper? Print the PDF version.</p></details>
+      <details class="rv"><summary>Will it get me views or income?</summary><p>No book can promise that, and this one doesn't. It teaches you to finish and release a film that holds together, and to read your analytics honestly so the next one is better.</p></details>
+      <details class="rv"><summary>Will the tools change and make this outdated?</summary><p>Tools change monthly. The method (map the song, decide the story, control continuity, cut on change, finish properly) doesn't. The book is written so you translate each step into whatever your tool offers today.</p></details>
+      <details class="rv"><summary>Can I use what I learn in client work?</summary><p>Yes. The licence lets you use the prompts, sheets and templates in your own projects, including paid client work. Please don't share or resell the files.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="wrap">
+    <span class="slate rv">You have the song</span>
+    <h2 class="rv">Now make <em>the film.</em></h2>
+    <p class="lead rv" style="margin:0 auto">Seven days from now you could have a finished music video, a world that holds together, and a method you can use on every song after it.</p>
+    <div class="btns rv">
+      <a class="btn solid" href="https://shop.namatma.com/namatma/buy/0cd81bf0-3a4f-471d-b57b-a0cae6c5ccb0"><i></i>Get the complete kit · $15 <s>$20</s></a>
+      <a class="btn" href="https://shop.namatma.com/namatma/buy/1967d5d5-764a-41d8-9737-9e03ce61f6b3">Playbook only · $10</a>
+    </div>
+    <p class="note rv"><b>●</b> Instant digital download · Card or UPI · Secure checkout</p>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div><img class="lockup" src="assets/logo-lockup.png" alt="Videogrammer Studios" width="520" height="374"><p style="max-width:380px;font-size:14px">A film school, a film studio, and V AI. We write the song. Then we make the film.</p></div>
+    <div><h5>The kit</h5><a href="https://shop.namatma.com/namatma/buy/1967d5d5-764a-41d8-9737-9e03ce61f6b3">The Playbook</a><a href="https://shop.namatma.com/namatma/buy/a7a9548f-4f4a-443e-8968-1e25878e28ad">The Workbook</a><a href="https://shop.namatma.com/namatma/buy/0cd81bf0-3a4f-471d-b57b-a0cae6c5ccb0">Complete kit</a></div>
+    <div><h5>Videogrammer</h5><a href="https://videogrammer.com">Studio</a><a href="https://videogrammer.com/school.html">AI Film School</a><a href="https://videogrammer.com/films.html">Films</a></div>
+    <div><h5>Watch</h5><a href="https://www.youtube.com/@namaguru">NAMA on YouTube</a><a href="https://www.youtube.com/watch?v=26K8xcJmAok">Prometheus</a><a href="https://shop.namatma.com">More books</a></div>
+    <div class="fine">© 2026 Videogrammer Studios · Author Gurudath Sadanandan · Published by Namatma · Suno, Higgsfield and Seedance are trademarks of their owners, named only to describe a workflow; not affiliated or endorsed · Results depend on your song, tools and effort; no promise of views, followers or income.</div>
+  </div>
+</footer>
+
+<div class="buybar" id="buybar">
+  <div class="t"><b>Complete kit $15</b>Playbook + Workbook + shot sheets</div>
+  <a class="btn solid" href="https://shop.namatma.com/namatma/buy/0cd81bf0-3a4f-471d-b57b-a0cae6c5ccb0">Get it</a>
+</div>
+
+<script>window.FILMS=[{title:'Prometheus'},{title:'The Duel'},{title:'Chenda Beats'},{title:'Long Road'},{title:'Mughamara'},{title:'Stay Standing'},{title:'Go Go Little One'},{title:'Love Is Alive'},{title:'Tumhare Baad'},{title:'Awaken'}];window.WORLD={world:'reels'};</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/CopyShader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/shaders/LuminosityHighPassShader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/EffectComposer.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/RenderPass.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/ShaderPass.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/postprocessing/UnrealBloomPass.js"></script>
+<script src="assets/world.js"></script>
+<script>
+(function(){
+  /* reveal on scroll */
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.08,rootMargin:'0px 0px -40px 0px'});els.forEach(function(el){io.observe(el)});}
+  else els.forEach(function(el){el.classList.add('in')});
+  /* solid header after scroll */
+  var head=document.querySelector('header.top');
+  function sc(){head.classList.toggle('solid',scrollY>40);var bar=document.getElementById('buybar');bar.classList.toggle('show',scrollY>700&&(innerHeight+scrollY)<document.body.scrollHeight-300);}
+  addEventListener('scroll',sc,{passive:true});sc();
+  /* mobile menu */
+  var b=document.getElementById('burger'),n=document.getElementById('mainnav');
+  b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);});
+  n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open');b.setAttribute('aria-expanded',false);});});
+  /* motion toggle, same as videogrammer.com */
+  var t=document.getElementById('motionTog');
+  function lab(){var on=!document.body.classList.contains('calm');t.textContent=on?'Motion on':'Motion off';t.setAttribute('aria-pressed',on);}
+  t.addEventListener('click',function(){var on=document.body.classList.contains('calm');if(window.setMotion)window.setMotion(on);else document.body.classList.toggle('calm');lab();});
+  setTimeout(lab,50);
+})();
+</script>
+</body>
+</html>
