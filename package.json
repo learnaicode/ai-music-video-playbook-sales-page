@@ -1,0 +1,12 @@
+{
+  "name": "ai-music-video-playbook-sales-page",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node serve.mjs",
+    "start": "node serve.mjs",
+    "build": "node build.mjs",
+    "preview": "node serve.mjs dist"
+  }
+}
